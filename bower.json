@@ -1,0 +1,22 @@
+{
+  "name": "Day-21",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hughdevore/Day-21",
+  "authors": [
+    "Hugh J. Devore <hughdevore@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "lodash": "~3.1.0",
+    "backbone": "~1.1.2",
+    "bootstrap": "~3.3.2"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game of the Century</title>
+		<link type="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link type="stylesheet" href="style/css/main.css">
+	</head>
+	<body>
+		<main id="app-view">
+			<section id="loading-screen">
+				<h2>LOADING</h2>
+			</script>
+
+			<section class="page-view" id="menu-screen">
+				<h2>MENU</h2>
+			</script>
+
+			<section class="page-view" id="game-screen">
+				<h2>GAME ON</h2>
+			</script>
+
+			<section class="page-view" id="leaderboard-screen">
+				<h2>LEADERBOARD</h2>
+			</section>
+
+			<section class="page-view" id="settings-screen">
+			<h2>SETTINGS</h2>
+			</section>
+		</main>
+		<script type="text/html" id="template">
+
+		</script>
+		<!-- These are my Dependencies -->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+		<script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+		<!-- These are my Models -->
+		<script type="text/javascript" src="scripts/models/gameModel.js"></script>
+		<!-- These are my Collections -->
+		<script type="text/javascript" src="scripts/collections/gameCollection.js"></script>
+		<!-- THese are my Views -->
+		<script type="text/javascript" src="scripts/views/SettingsView.js"></script>
+		<script type="text/javascript" src="scripts/views/MenuView.js"></script>
+		<script type="text/javascript" src="scripts/views/LoadingView.js"></script>
+		<script type="text/javascript" src="scripts/views/LeaderboardView.js"></script>
+		<script type="text/javascript" src="scripts/views/GameOnView.js"></script>
+		<script type="text/javascript" src="scripts/views/AppView.js"></script>
+
+		<!-- This is my main.js file -->
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>
