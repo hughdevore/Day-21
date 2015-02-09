@@ -1,6 +1,6 @@
 var SettingsView = Backbone.View.extend({
-		el: 'settings-screen',
+		el: '#settings-screen',
 		initialize: function() {
-			console.log('settings view!!')
+			this.$el.show();
 		}
 });

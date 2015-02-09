@@ -1,6 +1,6 @@
 var LeaderboardView = Backbone.View.extend({
-		el: 'leaderboard-screen',
+		el: '#leaderboard-screen',
 		initialize: function(){
-			console.log('leaderboard view!!')
+			this.$el.show();
 		}
 });
