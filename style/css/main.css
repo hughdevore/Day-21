@@ -1,12 +1,75 @@
 body {
-	font-size: 3em;
+	font-size: 4em;
 	margin: 0 auto;
 	text-align: center;
 	background-color: black;
 	color: blue;
+	font-family: 'Oswald', sans-serif;
+	padding: 0.5em;
 }
 
-.page-view a {
-	color: yellow;
-	line-height: 2;
+
+
+
+#loading-screen {
+	padding: 3em 0 0 0;
 }
+
+#loading-header {
+	font-size: 1em;
+	text-align: center;
+	color: rgb(101, 148, 203);
+	font-weight: 700;
+	color: rgb(255, 255, 194);
+}
+
+
+
+
+#menu-screen {
+	padding: 0 0 1em 0;
+}
+
+#menu-header {
+	font-size: 3em;
+	padding: 0em;
+	color: rgb(250, 117, 56);
+}
+
+.link {
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+	margin: .25em auto;
+	line-height: 1.7;
+	color: rgb(198, 174, 141);
+	border-radius: 0.25em;
+	background-color: rgb(90, 72, 54);
+}
+
+
+.menu {
+	margin: 0;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+.menu-link {
+	font-size: .75em;
+	padding: 0.05em 0.15em;
+	border: 3px dashed rgb(198, 174, 141);
+}
+
+.page-title {
+	font-size: 2em;
+	padding: 0 0 1em 0;
+	color: rgb(250, 117, 56);
+}
+
+
+.setting {
+	color: rgb(198, 174, 141);
+	text-align: left;
+}
+

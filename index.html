@@ -3,28 +3,50 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Game of the Century</title>
-		<link type="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style/css/main.css">
 	</head>
 	<body>
 		<main id="app-view">
 			<section class="page-view" id="loading-screen">
-				<h1>.... LOADING</h1>
+				<div id="loading-header">}~{  LOADING  }~{</div>
+			</section>
+			
+			<section class="page-view" id="menu-screen">
+				<div id="menu-header">MENU</div>
+				<a class="link" href="#play" id="play">GAME ON</a>
+				<a class="link" href="#leaderboard" id="leaderboard">LEADERBOARD</a>
+				<a class="link" href="#settings" id="settings">SETTINGS</a>
 			</section>
 
-			<section class="page-view" id="menu-screen">
-				<h1>MENU</h1>
-				<div class="page-view" id="game-screen">
-					<a href="#play" id="play">GAME ON</a>
+			<section class="page-view" id="play-screen">
+				<div class="menu">
+					<a href="#menu" class="menu-link">MENU</a>
 				</div>
 
-				<div class="page-view" id="leaderboard-screen">
-					<a href="#leaderboard" id="leaderboard">LEADERBOARD</a>
+				<div class="page-title">WELCOME TO THE GAME.</div>
+			</section>
+
+
+			<section class="page-view" id="leaderboard-screen">
+				<div class="menu">
+					<a href="#menu" class="menu-link">MENU</a>
 				</div>
 
-				<div class="page-view" id="settings-screen">
-					<a href="#settings" id="settings">SETTINGS</a>
+				<div class="page-title">THE LEADERS.</div>
+			</section>
+
+
+			<section class="page-view" id="settings-screen">
+				<div class="menu">
+					<a href="#menu" class="menu-link">MENU</a>
 				</div>
+				
+				<div class="page-title">YOUR SETTINGS.</div>
+					<div id="settings-list">
+						<div class="setting">USER:</div><input type="text">
+					</div>
 			</section>
 
 		</main>

@@ -1,5 +1,5 @@
 var PlayView = Backbone.View.extend({
-		el: '#game-screen',
+		el: '#play-screen',
 		initialize: function() {
 			this.$el.show();
 		}

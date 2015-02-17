@@ -24,7 +24,6 @@ var AppView = Backbone.View.extend({
 		
 
 
-
 		var Router = Backbone.Router.extend({
 				routes: {
 						'loading': 		'loading',
@@ -32,7 +31,7 @@ var AppView = Backbone.View.extend({
 						'play': 		'play',
 						'leaderboard': 	'leaderboard',
 						'settings': 	'settings',
-						'': 	'loading'
+						'': 			'loading'
 				},
 
 				loading: function() {
@@ -41,9 +40,6 @@ var AppView = Backbone.View.extend({
 					setTimeout( function () {
 						self.loading.$el.hide();
 						self.menu.$el.show();
-						self.play.$el.show();
-						self.leaderboard.$el.show();
-						self.settings.$el.show();
 					}, 4000);
 				},
 
