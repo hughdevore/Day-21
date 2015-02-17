@@ -1,0 +1,12 @@
+body {
+	font-size: 3em;
+	margin: 0 auto;
+	text-align: center;
+	background-color: black;
+	color: blue;
+}
+
+.page-view a {
+	color: yellow;
+	line-height: 2;
+}

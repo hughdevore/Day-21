@@ -31,36 +31,38 @@ var AppView = Backbone.View.extend({
 						'menu': 		'menu',
 						'play': 		'play',
 						'leaderboard': 	'leaderboard',
-						'settings': 	'settings'
-						'*index.html': 		'loading'
+						'settings': 	'settings',
+						'': 	'loading'
 				},
 
 				loading: function() {
-					console.log('loading');
 					self.hideAllPages();
 					self.loading.$el.show();
+					setTimeout( function () {
+						self.loading.$el.hide();
+						self.menu.$el.show();
+						self.play.$el.show();
+						self.leaderboard.$el.show();
+						self.settings.$el.show();
+					}, 4000);
 				},
 
 				menu: function() {
-					console.log('menu');
 					self.hideAllPages();
 					self.menu.$el.show();
 				},
 
 				play: function() {
-					console.log('gameon');
 					self.hideAllPages();
 					self.play.$el.show();
 				},
 
 				leaderboard: function() {
-					console.log('leaderboard');
 					self.hideAllPages();
 					self.leaderboard.$el.show();
 				},
 
 				settings: function() {
-					console.log('settings');
 					self.hideAllPages();
 					self.settings.$el.show();
 				},
@@ -69,7 +71,6 @@ var AppView = Backbone.View.extend({
 					self.hideAllPages();
 					self.loading.$el.show();
 				} 
-			}
 		});
 
 		var appRouter = new Router();
@@ -79,6 +80,5 @@ var AppView = Backbone.View.extend({
 
 	hideAllPages: function() {
 		$('.page-view').hide();
-		console.log('hidden!');
 	}
 });
