@@ -68,8 +68,9 @@ body {
 }
 
 
-.setting {
+#settings-list{
 	color: rgb(198, 174, 141);
 	text-align: left;
+	margin: 0 auto;
 }
 
